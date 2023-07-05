@@ -1,15 +1,3 @@
-//FAQs
-let answers = document.querySelectorAll(".faq");
-answers.forEach((event) => {
-  event.addEventListener("click", () => {
-    if (event.classList.contains("active")) {
-      event.classList.remove("active");
-    } else {
-      event.classList.add("active");
-    }
-  });
-});
-
 //Booking Form
 window.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("booking-form");
@@ -55,24 +43,3 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-//Sign in buttons
-let signinBtn = document.getElementById("signinBtn");
-let loginBtn = document.getElementById("loginBtn");
-let nameField = document.getElementById("nameField");
-let title = document.getElementById("title");
-
-loginBtn.onclick = function () {
-  nameField.style.maxHeight = "0";
-  title.innerHTML = "Log in";
-  signinBtn.classList.add("disable");
-  loginBtn.classList.remove("disable");
-};
-
-signinBtn.onclick = function () {
-  nameField.style.maxHeight = "60px";
-  title.innerHTML = "Sign in";
-  signinBtn.classList.remove("disable");
-  loginBtn.classList.add("disable");
-};
-
-//FAQs
